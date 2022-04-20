@@ -1,0 +1,8 @@
+/* Just a sample to prove this CSS loads properly */
+body {
+    background-color: blue;
+
+    h1 {
+        background-color: green;
+    }
+}
