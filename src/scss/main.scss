@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'style';
+
+/* global */
+body {
+    box-sizing: border-box;
+    color: var(--text-main-color);
+    font-size: var(--main-fs);
+    background-color: var(--twilio-light-gray);
+    a {
+        text-decoration: none;
+    }
+    ul {
+        list-style-type: none;
+    }
+}

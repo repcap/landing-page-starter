@@ -1,0 +1,200 @@
+/* header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: var(--text-sub);
+    img.header--image {
+        max-width: 783px;
+        height: auto;
+        @media(max-width: 800px){
+            max-width: 100%;
+        }
+    }
+    @media(max-width: 1200px){
+        flex-direction: column;
+    }
+    @media(max-width: 800px){
+        flex-direction: column;
+    }
+}   
+
+.header--content {
+    display: flex;
+    flex-direction: column;
+    .header--content-subtitle {
+        color: var(--twilio-red);
+        margin-bottom: auto;
+        font-size: var(--text-sub);
+    }
+    .header--content-title {
+        font-size: var(--text-header);
+        margin: auto 0px auto 0px;
+    }
+    .header--content-desc {
+        max-width: 468px;
+    }
+    @media(max-width: 507px){
+        // .header--content-subtitle {
+        //     color: var(--twilio-red);
+        //     margin-bottom: auto;
+        //     font-size: var(--text-sub);
+        // }
+        // .header--content-title {
+        //     font-size: var(--text-header);
+        //     margin: auto 0px auto 0px;
+        // }
+        // .header--content-desc {
+        //     width: 82%;
+        // }
+        padding: 4vh;
+    }
+}
+
+
+/* main */
+.main--container {
+    margin: auto;
+    width: 100%;
+    height: 2474px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    @media(max-width: 1200px){
+        margin: 4vw auto 4vw auto;
+        gap: 4vw;
+    }
+    @media(max-width: 960px){
+        gap: 6vw;
+    }
+    @media(max-width: 791px){
+        gap: 8vw;
+    }
+    h3 {
+        margin: auto;
+        text-align: center;
+        font-size: var(--text-cards-header);
+    }
+}
+
+.main--users-list {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 29px;
+    row-gap: 51px;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    @media(max-width: 1200px){
+        grid-template-columns: auto auto;
+    }
+    @media(max-width: 791px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.main--users-card {
+    border-radius: var(--rounded);
+    box-shadow: var(--main-shadow);
+    margin: auto;
+    text-align: left;
+    width: 360px;
+    max-width: 360px;
+    height: 552px;
+    max-height: 552px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    img {
+        padding: 10% 5% 10% 5%;
+        border-radius: 50%;
+        height: auto;
+        max-width: 90.5%;
+        margin: auto;
+    }
+}
+
+.card--content {
+    padding: 4% 8% 1% 8%;
+    width: -webkit-fill-available;
+    background-color: white;
+    height: 132px;
+    margin: auto auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 var(--rounded) var(--rounded);
+    .users--card-desc {
+        margin: 0 auto 0 0;
+    }
+    hr {
+        width: 98%;
+        border: #E1E3EA solid 0.2px;
+        margin: auto;
+    }
+    h4 {
+        font-size: var(--text-sub);
+        margin: auto auto 0 0;
+    }
+}
+
+.users--card-readmore {
+    display: flex;
+    flex-direction: row;
+    height: var(--text-sub);
+    margin: 0 0 auto;
+    h4.users--card-link {
+        margin:  auto auto auto 0;
+    }
+        img.readmore--icon {
+            padding: 0%;
+            margin: auto 0 auto auto;
+            height: 10px;
+            width: auto;
+            fill: var(--text-main-color);
+        }
+}
+
+/* * info card * */
+.main--information-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: var(--main-shadow);
+    text-align: left;
+    width: 100%;
+    max-width: 1141px;
+    height: 181px;
+    max-height: 181px;
+    margin: auto;
+    background: white;
+    border-radius: var(--rounded);
+    img  {
+        max-width: 251px;
+        height: 206px;
+        align-self: end;
+        padding: 1%;
+    }
+    .information--content {
+        width: 401px;
+        h3 {
+            font-weight: 700;
+            text-align: start;
+        }
+    }
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--btn-primary);
+    padding: 13px;
+    border-radius: var(--rounded);
+    .learnmore--carrot {
+        font-weight: 900;
+    }
+}

@@ -4,14 +4,15 @@
   ],
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build --no-source-maps"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index/html --no-source-maps"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
     "autoprefixer": "^10.4.4",
-    "parcel": "^2.0.1",
+    "parcel": "^2.5.0",
     "postcss": "^8.4.12",
     "postcss-import": "^14.1.0",
-    "tailwindcss": "^3.0.24"
+    "sass": "^1.50.1"
   }
 }
